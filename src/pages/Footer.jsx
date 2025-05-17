@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
        
         <div>
-          <h2 className="text-7xl md:text-[5vw] font-bold bank-gothic leading-[8vw] tracking-tighter">Stravinci</h2>
+          <h2 className="text-5xl md:text-[5vw] font-bold bank-gothic leading-[9vw] tracking-tighter">Stravinci</h2>
           <p className="text-gray-400 copperplate-gothic mt-2">Automotive Engineering the Future of Electric Mobility</p>
         </div>
         
@@ -32,10 +32,10 @@ const Footer = () => {
         <div>
           <h3 className="text-md copperplate-gothic">Follow Us</h3>
           <div className="flex space-x-4 mt-2">
-            <a href="#" className="text-gray-400 hover:text-white transition"><FaFacebook size={24} /></a>
+            
             <a href="https://www.instagram.com/stravincii?igsh=ZTBub2xmbjRwN2w1" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition"><FaInstagram size={24} /></a>
             <a href="https://x.com/Stravincii?t=22LgB1izFu_CLCIZQx8WsQ&s=08" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition"><FaTwitter size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition"><FaLinkedin size={24} /></a>
+           
           </div>
         </div>
       </div>

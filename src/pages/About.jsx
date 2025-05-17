@@ -46,7 +46,7 @@ function About() {
         <h1 className="text-[8vw] md:text-[5vw] leading-[1vw] md:mt-9 copperplate-gothic text-center md:text-left">
           About Us
         </h1>
-        <div className="text-[2.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
+        <div className="text-[3.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
           <h2 className="mt-5">
             Stravinci Automotive was founded with a singular vision—to redefine the future of electric propulsion without compromise. Spearheaded by Founder Kishore Krishnamoorthy and Co-Founder & COO Varun Kannan, our mission is to develop cutting-edge electric engines that deliver unparalleled performance while remaining environmentally responsible.
           </h2>
@@ -64,7 +64,7 @@ function About() {
         <h1 className="text-[8vw]  md:text-[5vw] leading-[10vw] md:leading-[5vw] copperplate-gothic text-center md:text-left">
           Our Vision
         </h1>
-        <div className="text-[2.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
+        <div className="text-[3.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
           <h2 className="mt-5">
             At Stravinci Automotive, we believe that electric vehicles shouldn't compromise on power, thrill, or emotion. Our mission is to engineer a cutting-edge EV engine that houses a beast within—delivering raw power while being environmentally responsible.
           </h2>
@@ -79,7 +79,7 @@ function About() {
         <h1 className="text-[8vw] md:text-[5vw] leading-[10vw] md:leading-[6vw] copperplate-gothic text-center md:text-left">
           Our Technology
         </h1>
-        <div className="text-[2.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
+        <div className="text-[3.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
           <h2 className="mt-5">
             At Stravinci Automotive, we are redefining electric mobility with groundbreaking engineering. Our EV powertrains are designed to deliver raw performance, efficiency, and an unparalleled driving experience.
           </h2>

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import About from "./About";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import StravinciParticle from "./Particles";
+import {StravinciParticle} from "./Particles";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,11 +93,11 @@ function Home() {
         <StravinciParticle/>
           </div>
         <div className="w-full flex flex-col  justify-between border-t-1 ">
-        <h1 className="text-[2.5vw] md:text-[1.2vw] text-gray-400 w-full mt-2 md:w-[27vw] copperplate-gothic">
+        <h1 className="text-[4vw] md:text-[1.2vw] text-gray-400 w-full mt-2 md:w-[27vw] copperplate-gothic">
               Automotive Engineering the Future of Electric Mobility
             </h1>
             <div className="w-full md:w-[50vw] mt-2 md:mt-5">
-              <h2 className="leading-tight copperplate-gothic text-gray-400 text-[2vw] md:text-[1vw]">
+              <h2 className="leading-tight copperplate-gothic text-gray-400 text-[3.5vw] md:text-[1vw]">
                 We're not just building engines; we're crafting the future of mobility, one breakthrough at a time.
               </h2> 
             </div>
