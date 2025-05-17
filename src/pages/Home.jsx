@@ -1,17 +1,8 @@
-import React, { useEffect, useRef, lazy, Suspense } from "react";
+import React, { useEffect, useRef } from "react";
 import About from "./About";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Lazy load the heavy Particles component
-const StravinciParticle = lazy(() => import("./Particles"));
-
-// Simple loading placeholder for the particles
-const ParticlesLoader = () => (
-  <div className="w-full h-[65vh] flex items-center justify-center bg-zinc-950">
-    <div className="text-white text-2xl copperplate-gothic">Loading...</div>
-  </div>
-);
+import StravinciParticle from "./Particles";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,16 +85,15 @@ function Home() {
 
   return (
     <>
-      <div ref={homeRef} className="text-white bg-zinc-950 items-center justify-between md:mt-0 mt-[1vh] z-40 relative md:h-screen px-6 md:px-20 py-10 md:py-[8vw]">
+      <div ref={homeRef} className="text-white  bg-zinc-950 items-center justify-between md:mt-0 mt-[1vh] z-40 relative md:h-screen px-6 md:px-20 py-10 md:py-[8vw]">
        
         <div ref={textRef} className="text-white w-full items-center justify-between">
           <div>
-            <Suspense fallback={<ParticlesLoader />}>
-              <StravinciParticle />
-            </Suspense>
+
+        <StravinciParticle/>
           </div>
-          <div className="w-full flex flex-col justify-between border-t-1">
-            <h1 className="text-[2.5vw] md:text-[1.2vw] text-gray-400 w-full mt-2 md:w-[27vw] copperplate-gothic">
+        <div className="w-full flex flex-col  justify-between border-t-1 ">
+        <h1 className="text-[2.5vw] md:text-[1.2vw] text-gray-400 w-full mt-2 md:w-[27vw] copperplate-gothic">
               Automotive Engineering the Future of Electric Mobility
             </h1>
             <div className="w-full md:w-[50vw] mt-2 md:mt-5">
@@ -111,9 +101,12 @@ function Home() {
                 We're not just building engines; we're crafting the future of mobility, one breakthrough at a time.
               </h2> 
             </div>
-          </div>
+        </div>
+         
         </div>
       </div>
+
+    
       <About />
     </>
   );
