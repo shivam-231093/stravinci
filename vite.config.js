@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    minify: 'esbuild' // Force esbuild instead of Terser
+    minify: 'esbuild' 
   }
 })
