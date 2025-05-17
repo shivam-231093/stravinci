@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Enable smooth scrolling for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default font for the entire website */
+body {
+  font-family: 'Bank Gothic', sans-serif;
+}
+
+/* Bank Gothic font class */
+.bank-gothic {
+  font-family: 'Bank Gothic', sans-serif;
+  font-weight: normal;
+}
+
+/* Copperplate Gothic font class */
+.copperplate-gothic {
+  font-family: 'Copperplate Gothic', serif;
+  font-weight: normal;
+}
+
+/* Keep existing font classes for backward compatibility */
+.bonheur-royale-regular {
+    font-family: 'Copperplate Gothic', serif;
+    font-weight: normal;
+}
+
+.transition-a {
+  transition: all 0.25s ease-in-out;
+}
+
+a:active {
+  text-emphasis-color: rgb(212, 212, 25);
+}
+
+.transition-a:hover {
+  scale: 1.1;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.libre-baskerville-regular, .poppins-regular, .poppins-light {
+  font-family: 'Bank Gothic', sans-serif;
+  font-weight: normal;
+}
+
+.libre-baskerville-bold, .poppins-bold, .poppins-semibold, .poppins-medium {
+  font-family: 'Copperplate Gothic', serif;
+  font-weight: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: 'Bank Gothic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+

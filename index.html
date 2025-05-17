@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Stravinci.jpeg" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Stravinci Automotive | Revolutionary Electric Vehicle Technology</title>
+    <meta name="title" content="Stravinci Automotive | Revolutionary Electric Vehicle Technology">
+    <meta name="description" content="Stravinci Automotive is pioneering the future of electric mobility with cutting-edge technology that delivers unparalleled performance while remaining environmentally responsible.">
+    <meta name="keywords" content="electric vehicles, EV technology, automotive engineering, sustainable mobility, electric engines, Stravinci">
+    <meta name="author" content="Stravinci Automotive">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stravinci.com/">
+    <meta property="og:title" content="Stravinci Automotive | Revolutionary Electric Vehicle Technology">
+    <meta property="og:description" content="Stravinci Automotive is pioneering the future of electric mobility with cutting-edge technology that delivers unparalleled performance while remaining environmentally responsible.">
+    <meta property="og:image" content="/Stravinci.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://stravinci.com/">
+    <meta property="twitter:title" content="Stravinci Automotive | Revolutionary Electric Vehicle Technology">
+    <meta property="twitter:description" content="Stravinci Automotive is pioneering the future of electric mobility with cutting-edge technology that delivers unparalleled performance while remaining environmentally responsible.">
+    <meta property="twitter:image" content="/Stravinci.jpeg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stravinci.com/" />
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Stravinci">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Bank Gothic';
+        src: url('/fonts/bank gothic medium bt.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      
+      @font-face {
+        font-family: 'Copperplate Gothic';
+        src: url('/fonts/Copperplate-Gothic-Std-30-AB.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Stravinci Automotive",
+        "url": "https://stravinci.com",
+        "logo": "https://stravinci.com/Stravinci.jpeg",
+        "description": "Stravinci Automotive is pioneering the future of electric mobility with cutting-edge technology that delivers unparalleled performance while remaining environmentally responsible.",
+        "sameAs": [
+          "https://instagram.com/stravincii",
+          "https://x.com/Stravincii",
+          "https://whatsapp.com/channel/0029Vb56Tzd7YSdDDS2HHg0X"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "email": "contact@stravinci.com"
+        }
+      }
+    </script>
+    
+    <!-- Preconnect to critical domains -->
+    <link rel="preconnect" href="https://firestore.googleapis.com">
+    <link rel="dns-prefetch" href="https://firestore.googleapis.com">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+    
+    <!-- Offline Fallback -->
+    <noscript>
+      <div style="padding: 20px; text-align: center; font-family: sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>Please enable JavaScript to use Stravinci Automotive website.</p>
+      </div>
+    </noscript>
+  </body>
+</html>
