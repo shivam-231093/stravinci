@@ -48,8 +48,13 @@ function Contact() {
     
     try {
       // Add a new document to the "contacts" collection
+      
       await addDoc(collection(db, "contacts"), {
-        ...formData,
+        name: formData.name,
+        email: formData.email,
+        contact: formData.contact,
+        subject: formData.subject,
+        message: formData.message,
         timestamp: serverTimestamp()
       });
       

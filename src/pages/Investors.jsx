@@ -50,7 +50,12 @@ function Investors() {
     try {
       // Add a new document to the "investors" collection
       await addDoc(collection(db, "investors"), {
-        ...formData,
+        name: formData.name,
+        email: formData.email,
+        contact: formData.contact,
+        field: formData.field,
+        subject: formData.subject,
+        message: formData.message,
         timestamp: serverTimestamp()
       });
       

@@ -1,4 +1,3 @@
-
 import { useRef, useEffect, useState } from "react"
 
 
@@ -35,7 +34,7 @@ export const StravinciParticle = () => {
       ctx.fillStyle = "white";
       ctx.save();
     
-      const fontSize = isMobile ? Math.min(canvas.width /5, 40) : Math.min(canvas.width / 5, 120);
+      const fontSize = isMobile ? Math.min(canvas.width /5, 55) : Math.min(canvas.width / 5, 120);
       ctx.font = `bold ${fontSize}px 'Bank-Gothic', Bank Gothic`;
     
       const text = "Stravinci";
@@ -44,7 +43,7 @@ export const StravinciParticle = () => {
     
       // Calculate overall width including logos
       const logoSize = fontSize *2; // logo height roughly 80% of fontSize
-      const totalWidth = logoSize + 10 + textWidth + 10 + logoSize; // logos + spacing
+      const totalWidth = !isMobile ? logoSize + 10 + textWidth + 10 + logoSize : textWidth; // logos + spacing
     
       const startX = (canvas.width - totalWidth) / 2;
       const centerY = canvas.height /2 + fontSize / 3;
@@ -52,22 +51,28 @@ export const StravinciParticle = () => {
       // --- Draw left AWS Logo ---
       const logoPath = new Path2D(AWS_LOGO_PATH);
     
-      ctx.save();
-      ctx.translate(startX, centerY - logoSize ); // Move to where logo should be
-      const logoScale = logoSize / 120; // Assuming AWS path max size ~120 (you might tweak if needed)
-      ctx.scale(logoScale, logoScale);
-      ctx.fill(logoPath);
-      ctx.restore();
+      if(!isMobile){
+        ctx.save();
+        ctx.translate(startX, centerY - logoSize ); // Move to where logo should be
+        const logoScale = logoSize / 120; // Assuming AWS path max size ~120 (you might tweak if needed)
+        ctx.scale(logoScale, logoScale);
+        ctx.fill(logoPath);
+        ctx.restore();
+      }
     
       // --- Draw Text ---
-      ctx.fillText(text, startX + logoSize + 20, centerY-logoSize/5);
+      const textX = !isMobile ? startX + logoSize + 20 : startX;
+      ctx.fillText(text, textX, centerY-logoSize/5);
     
       // --- Draw right AWS Logo ---
-      ctx.save();
-      ctx.translate(startX + logoSize + 10 + textWidth + 10, centerY - logoSize );
-      ctx.scale(logoScale, logoScale);
-      ctx.fill(logoPath);
-      ctx.restore();
+      if(!isMobile){
+        ctx.save();
+        ctx.translate(startX + logoSize + 10 + textWidth + 10, centerY - logoSize );
+        const logoScale = logoSize / 120;
+        ctx.scale(logoScale, logoScale);
+        ctx.fill(logoPath);
+        ctx.restore();
+      }
     
       ctx.restore();
     
