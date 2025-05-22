@@ -36,23 +36,28 @@ export const StravinciParticle = () => {
       const fontSize = isMobile ? Math.min(canvas.width /5, 55) : Math.min(canvas.width / 5, 120);
       ctx.font = `lighter ${fontSize}px 'Harlow', mono`;
     
-      const text = "Stravinci Automotive";
+      const text = "Stravinci";
       const textMetrics = ctx.measureText(text);
       const textWidth = textMetrics.width;
+      const text2="Automotive";
+      const textMetrics2 = ctx.measureText(text2);
+      const textWidth2 = textMetrics2.width;
     
       // Calculate overall width including logos
       const logoSize = fontSize *1; // logo height roughly 80% of fontSize
-      const totalWidth = !isMobile ? logoSize + 10 + textWidth + 10 + logoSize : textWidth; // logos + spacing
+      const totalWidth = !isMobile ? textWidth + 10 + textWidth2 : textWidth; // logos + spacing
     
       const startX = (canvas.width - totalWidth) / 3;
-      const centerY = canvas.height /2 + fontSize / 3;
+      const centerY = (isMobile?canvas.height /2.2: canvas.height/2) + fontSize / 3;
     
     
       
     
       // --- Draw Text ---
-      const textX = !isMobile ? startX + logoSize  : startX;
-      ctx.fillText(text, textX, centerY-logoSize/5);
+      const textX = !isMobile ? startX + logoSize -50 : startX+30;
+      ctx.fillText(text, textX-50, centerY-logoSize/5);
+
+      ctx.fillText(text2, isMobile ? startX : textX*3.5, isMobile ? (centerY-logoSize/5)*1.3 : (centerY-logoSize/5));
     
       
     
