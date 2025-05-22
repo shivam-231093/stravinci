@@ -3,7 +3,6 @@ import Nav from './pages/Nav';
 import Home from './pages/Home';
 import Investors from './pages/Investors';
 import Contact from './pages/Contact';
-import ComingSoon from './pages/ComingSoon';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './pages/Footer';
 
@@ -20,7 +19,6 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/investors" element={<Investors />} />
-              <Route path="/coming-soon" element={<ComingSoon />} />
             </Routes>
             <div className='w-full h-[60vh]'></div>
           </div>

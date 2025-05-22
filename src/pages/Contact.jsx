@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Footer from './Footer';
 import { db } from "../firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { FaWhatsapp, FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaWhatsapp, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 function Contact() {
   const [formData, setFormData] = useState({

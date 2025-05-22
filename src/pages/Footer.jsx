@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {  FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
        
         <div>
-          <h2 className="text-5xl md:text-[5vw] font-bold bank-gothic leading-[9vw] tracking-tighter">Stravinci</h2>
+          <h2 className="text-5xl md:text-[5vw] font-head font-light leading-[9vw] tracking-tighter">Stravinci</h2>
           <p className="text-gray-400 copperplate-gothic mt-2">Automotive Engineering the Future of Electric Mobility</p>
         </div>
         

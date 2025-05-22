@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
+import PropTypes from 'prop-types';
+
 const SmoothScroll = ({ children }) => {
   const scrollRef = useRef(null);
 
@@ -9,14 +11,12 @@ const SmoothScroll = ({ children }) => {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      lerp: 0.08, // Controls smoothness (0 = instant, 1 = no effect)
+      lerp: 0.08,
       smartphone: { smooth: true },
       tablet: { smooth: true },
     });
 
-    return () => {
-      if (scroll) scroll.destroy();
-    };
+    return () => scroll && scroll.destroy();
   }, []);
 
   return (
@@ -24,6 +24,10 @@ const SmoothScroll = ({ children }) => {
       {children}
     </div>
   );
+};
+
+SmoothScroll.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default SmoothScroll;

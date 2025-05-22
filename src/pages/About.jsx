@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Footer from './Footer';
+// import Footer from './Footer';
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {
-  const aboutRef = useRef(null);
+  
 
   useEffect(() => {
     // SEO - Update meta description for About section
@@ -48,7 +48,7 @@ function About() {
         </h1>
         <div className="text-[3.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
           <h2 className="mt-5">
-            Stravinci Automotive was founded with a singular vision—to redefine the future of electric propulsion without compromise. Spearheaded by Founder Kishore Krishnamoorthy and Co-Founder & COO Varun Kannan, our mission is to develop cutting-edge electric engines that deliver unparalleled performance while remaining environmentally responsible.
+            Stravinci Automotive was founded with a singular vision—to redefine the future of electric propulsion without compromise. Spearheaded by Founder Kishore and Co-Founder & COO Varun Kannan, our mission is to develop cutting-edge electric engines that deliver unparalleled performance while remaining environmentally responsible.
           </h2>
           <h2 className="mt-5">
             Unlike hybrid or smart hybrid technologies, our focus remains entirely on next-generation electric engineering, ensuring a seamless fusion of power, efficiency, and innovation.
@@ -66,7 +66,7 @@ function About() {
         </h1>
         <div className="text-[3.5vw] text-gray-400 md:text-[1.2vw] w-full md:w-[50vw] py-6 md:py-10 mt-[5vw] copperplate-gothic">
           <h2 className="mt-5">
-            At Stravinci Automotive, we believe that electric vehicles shouldn't compromise on power, thrill, or emotion. Our mission is to engineer a cutting-edge EV engine that houses a beast within—delivering raw power while being environmentally responsible.
+            At Stravinci Automotive, we believe that electric vehicles shouldn&apos;t compromise on power, thrill, or emotion. Our mission is to engineer a cutting-edge EV engine that houses a beast within—delivering raw power while being environmentally responsible.
           </h2>
           <h2 className="mt-5">
             We are redefining the EV experience by integrating an innovative exhaust system, allowing you to hear the beast roar while keeping emissions at zero.

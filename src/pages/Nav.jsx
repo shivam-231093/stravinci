@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdOutlineClose } from "react-icons/md";
 import { RiMenu5Fill } from "react-icons/ri";
@@ -23,7 +23,7 @@ function Nav() {
             {/* Desktop Navbar */}
             <div className='fixed top-0 left-0 w-full bg-zinc-950 z-50 flex items-center justify-between lg:justify-evenly px-6 py-7 text-white bank-gothic'>
                 <div className='flex items-center'>
-                    <img className='w-16 h-16 rounded-full z-50 fixed' src="./stravinci.jpeg" alt="Stravinci Logo" />
+                    <img className='w-16 h-16 rounded-full z-50 fixed' src="./stravinci.png" alt="Stravinci Logo" />
                 </div>
                 <div className='hidden lg:flex items-center text-2xl space-x-8'>
                     <Link to="/" className='transition-all hover:text-blue-400 copperplate-gothic' onClick={handleNavClick}>Home</Link>
