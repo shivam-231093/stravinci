@@ -33,7 +33,7 @@ export const StravinciParticle = () => {
       ctx.fillStyle = "white";
       ctx.save();
     
-      const fontSize = isMobile ? Math.min(canvas.width /5, 55) : Math.min(canvas.width / 5, 120);
+      const fontSize = isMobile ? Math.min(canvas.width /5, 55) : Math.min(canvas.width / 11, 120);
       ctx.font = `lighter ${fontSize}px 'Harlow', mono`;
     
       const text = isMobile?"Stravinci":"Stravinci Automotive";
@@ -54,7 +54,7 @@ export const StravinciParticle = () => {
       
     
       // --- Draw Text ---
-      const textX = !isMobile ? startX + logoSize -50 : startX+30;
+      const textX = !isMobile ? startX + logoSize : startX+30;
       ctx.fillText(text, textX-50, centerY-logoSize/5);
 
       if(isMobile){
